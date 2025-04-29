@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <main>
+        <section>
+          <img src="./images/logo.svg" alt="Base Apparel" class="logo" />
+          <picture>
+            <source
+              srcset="./images/hero-desktop.jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="./images/hero-mobile.jpg"
+              alt="Base Apparel Store - Coming Soon"
+              class="hero-img"
+            />
+          </picture>
+
+          <div class="container">
+            <h1>We're <span>coming</span><span>soon</span></h1>
+            <p>
+              Hello fellow shoppers! We're currently building our new fashion
+              store. Add your email below to stay up-to-date with announcements
+              and our launch deals.
+            </p>
+            <form id="form" novalidate>
+              <div>
+                <label for="email" class="visually-hidden">Email address</label>
+                <div class="field-wrapper">
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="off"
+                    placeholder="email@company.com"
+                  />
+                  <img
+                    src="./images/icon-error.svg"
+                    class="icon-error"
+                    alt="Please check your email"
+                  />
+                  <button type="submit" id="submit-btn">
+                    <img
+                      src="./images/icon-arrow.svg"
+                      alt="Submit email address"
+                    />
+                    <span class="visually-hidden">Submit</span>
+                  </button>
+                </div>
+                <span
+                  aria-live="polite"
+                  id="email-error"
+                  class="error-message"
+                ></span>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
