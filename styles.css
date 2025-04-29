@@ -67,7 +67,7 @@ p {
 /* Form Styles */
 form {
   display: flex;
-  padding: 0 32px;
+  padding: 0;
   margin: 0 auto;
   margin-top: 16px;
   margin-bottom: 92px;
